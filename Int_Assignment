@@ -74,19 +74,45 @@ for i in range(2,95):
 print("\nQuestion 7: Find the factorial of 8")
 # Your code here
 
+n=8
+result=1
+for i in range(1,9):
+ result*=i
+print(result)
+
 
 
 # Question 8: Calculate the average of numbers: 15, 23, 31, 42, 56
 print("\nQuestion 8: Calculate the average of numbers: 15, 23, 31, 42, 56")
 # Your code here
 
+n=[15,23,31,42,56]
+sum=0
+for i range(n):
+ sum=sum+i
+result=(sum/len(n))
+print(result)
+
+
+
+
 # Question 9: Find the greatest common divisor (GCD) of 48 and 36
 print("\nQuestion 9: Find the greatest common divisor (GCD) of 48 and 36")
 # Your code here
 
+
+import math
+result=math.gcd(48,36)
+print(result)
+
 # Question 10: Calculate the sum of first 20 odd numbers
 print("\nQuestion 10: Calculate the sum of first 20 odd numbers")
 # Your code here 
+
+odd_sum=0
+for i in range(1,40,2):
+ odd_sum+=i
+print(odd_sum)
 
 
 
