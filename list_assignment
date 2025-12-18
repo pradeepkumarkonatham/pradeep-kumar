@@ -51,11 +51,41 @@ print("\nQuestion 8: Reverse the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
 
 # Question 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]
 print("\nQuestion 9: Count how many times 5 appears in [1, 5, 2, 5, 3, 5, 4, 5, 6]")
-# Your code here
+
+
+l=[1, 5, 2, 5, 3, 5, 4, 5, 6]
+d={}
+for ele in l:
+    if ele in d:
+        d[ele]+=1
+    else:
+        d[ele]=1
+print(d[5])
+
+
+
+
+
+
 
 # Question 10: Create a list of prime numbers between 1 and 50
 print("\nQuestion 10: Create a list of prime numbers between 1 and 50")
 # Your code here
+
+def isprime(n):
+    if n>1:
+        for i in range(2,n//2+1):
+            if n%i==0:
+                return False
+        else:
+             return True
+    else:
+        return False
+def 
+            
+
+
+
 
 # Question 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
