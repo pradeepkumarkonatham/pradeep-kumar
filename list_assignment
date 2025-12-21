@@ -89,19 +89,44 @@ def
 
 # Question 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 11: Flatten nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
-# Your code here
+
+
+L=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+import functools
+print(functools.reduce(lambda x,y:x+y,L))
 
 # Question 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]
 print("\nQuestion 12: Find common elements between [1, 2, 3, 4, 5] and [4, 5, 6, 7, 8]")
-# Your code here
+
+
+L=[1, 2, 3, 4, 5]
+L1= [4, 5, 6, 7, 8]
+
+
 
 # Question 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]
 print("\nQuestion 13: Create a list of lists: [[1, 2], [3, 4], [5, 6]]")
 # Your code here
 
+
+
+
+
+
 # Question 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 14: Find the sum of each sublist in [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
 # Your code here
+
+L=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(list(map(lambda x:sum(x),L)))
+
+l=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+import functools
+for sublist in l:
+print(functools.reduce(lambda x,y:x+y,sublist));
+
+
+l= [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 # Question 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("\nQuestion 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
@@ -109,7 +134,12 @@ print("\nQuestion 15: Transpose the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
 
 # Question 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]
 print("\nQuestion 16: Find the maximum value in each sublist of [[1, 5, 3], [9, 2, 7], [4, 8, 6]]")
-# Your code here
+
+l=[[1, 5, 3], [9, 2, 7], [4, 8, 6]]
+import functools
+for sublist in l:
+    print(functools.reduce(lambda x,y:x if x>y else y,sublist));
+
 
 # Question 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 print("\nQuestion 17: Create a 3D list: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]")
@@ -123,6 +153,11 @@ print("\nQuestion 18: Find the sum of all elements in 3D list [[[1, 2], [3, 4]],
 print("\nQuestion 19: Extract all even numbers from nested list [[1, 2, 3], [4, 5, 6], [7, 8, 9]]")
 # Your code here
 
+l=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for sublist in l:
+print(list(filter(lambda n:n%2==0,sublist))
+
+
 # Question 20: Create a list of mixed data types: [1, "hello", 3.14, True, [1, 2, 3]]
 print("\nQuestion 20: Create a list of mixed data types: [1, 'hello', 3.14, True, [1, 2, 3]]")
 # Your code here
@@ -130,6 +165,17 @@ print("\nQuestion 20: Create a list of mixed data types: [1, 'hello', 3.14, True
 # Question 21: Find the length of each string in ["apple", "banana", "cherry", "date"]
 print("\nQuestion 21: Find the length of each string in ['apple', 'banana', 'cherry', 'date']")
 # Your code here
+
+l=["apple", "banana", "cherry", "date"]
+print(list(map(len,l))
+
+
+l=["apple", "banana", "cherry", "date"]
+for ele in l:
+    print(len(ele)
+
+
+
 
 # Question 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]
 print("\nQuestion 22: Create a list of tuples: [(1, 'a'), (2, 'b'), (3, 'c')]")
